@@ -1,0 +1,64 @@
+/*common css 公用样式*/
+body{
+	font-size: 14px;
+    font-family: "Microsoft YaHei","微软雅黑",Tahoma,Helvetica;
+}
+a{
+	color: #666;
+}
+a:hover{
+	color: #666;
+	text-decoration: none;
+}
+/*model css 模块样式*/
+
+.wjs-topBar {
+	border-bottom: 1px solid #ccc;
+	font-size: 12px;
+}
+
+.wjs-topBar>.container {
+	line-height: 40px;
+	text-align: center;
+}
+
+.wjs-topBar>.container>div {
+	height: 40px;
+	border-left: 1px solid #ccc;
+}
+.wjs-topBar>.container>div:first-child{
+	border-left: none;
+}
+.wjs-topBar .btn-register{
+	background-color: #e92322;
+	color: #fff;
+	border:none;
+	padding: 3px 10px;
+	font-size: 12px;
+}
+.wjs-topBar .btn-login{
+	color: #666;
+	font-size: 12px;
+
+}
+.wjs-topBar .btn-login:hover{
+	text-decoration: none;
+}
+.wjs
+.wjs-app{
+	position: relative;
+	display: block;
+}
+.wjs-app img{
+	display: none;
+}
+/*不用写js代码，设置一个.wjs-app:hover 的css，当hover到 .wjs-app 时， 把img执行某个属性*/
+.wjs-app:hover img{
+	display: block;
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	margin-left: -60px;/*来自图片的宽度除以二*/
+	border:1px solid #ccc;
+	border-top: none;
+}
