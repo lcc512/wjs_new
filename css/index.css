@@ -62,3 +62,127 @@ a:hover{
 	border:1px solid #ccc;
 	border-top: none;
 }
+/*导航条*/
+.wjs-nav {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    margin: 0;
+}
+
+.wjs-nav .navbar-brand {
+    color: #777;
+    height: 80px;
+	line-height: 50px;
+}
+
+.wjs-nav .navbar-brand:focus,
+.wjs-nav .navbar-brand:hover {
+    color: #5e5e5e;
+    background-color: transparent
+}
+
+.wjs-nav .navbar-text {
+    color: #777
+}
+
+.wjs-nav .navbar-nav>li>a {
+    color: #777;
+    height: 80px;
+    line-height: 50px;
+}
+
+.wjs-nav .navbar-nav>li>a:focus,
+.wjs-nav .navbar-nav>li>a:hover {
+    color: #333;
+    border-bottom: 3px solid #dd3137;
+}
+
+.wjs-nav .navbar-nav>.active>a,
+.wjs-nav .navbar-nav>.active>a:focus,
+.wjs-nav .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: #fff;
+    border-bottom: 3px solid #dd3137;
+}
+
+.wjs-nav .navbar-nav>.disabled>a,
+.wjs-nav .navbar-nav>.disabled>a:focus,
+.wjs-nav .navbar-nav>.disabled>a:hover {
+    color: #ccc;
+    background-color: transparent
+}
+
+.wjs-nav .navbar-toggle {
+    border-color: #ddd;
+    margin-top: 23px;
+}
+
+.wjs-nav .navbar-toggle:focus,
+.wjs-nav .navbar-toggle:hover {
+    background-color: #ddd
+}
+
+.wjs-nav .navbar-toggle .icon-bar {
+    background-color: #888
+}
+
+.wjs-nav .navbar-collapse,
+.wjs-nav .navbar-form {
+    border-color: #e7e7e7
+}
+
+.wjs-nav .navbar-nav>.open>a,
+.wjs-nav .navbar-nav>.open>a:focus,
+.wjs-nav .navbar-nav>.open>a:hover {
+    color: #555;
+    background-color: #e7e7e7
+}
+
+@media (max-width:767px) {
+    .wjs-nav .navbar-nav .open .dropdown-menu>li>a {
+        color: #777
+    }
+    .wjs-nav .navbar-nav .open .dropdown-menu>li>a:focus,
+    .wjs-nav .navbar-nav .open .dropdown-menu>li>a:hover {
+        color: #333;
+        background-color: transparent
+    }
+    .wjs-nav .navbar-nav .open .dropdown-menu>.active>a,
+    .wjs-nav .navbar-nav .open .dropdown-menu>.active>a:focus,
+    .wjs-nav .navbar-nav .open .dropdown-menu>.active>a:hover {
+        color: #555;
+        background-color: #e7e7e7
+    }
+    .wjs-nav .navbar-nav .open .dropdown-menu>.disabled>a,
+    .wjs-nav .navbar-nav .open .dropdown-menu>.disabled>a:focus,
+    .wjs-nav .navbar-nav .open .dropdown-menu>.disabled>a:hover {
+        color: #ccc;
+        background-color: transparent
+    }
+}
+
+.wjs-nav .navbar-link {
+    color: #777
+}
+
+.wjs-nav .navbar-link:hover {
+    color: #333
+}
+
+.wjs-nav .btn-link {
+    color: #777
+}
+
+.wjs-nav .btn-link:focus,
+.wjs-nav .btn-link:hover {
+    color: #333
+}
+
+.wjs-nav .btn-link[disabled]:focus,
+.wjs-nav .btn-link[disabled]:hover,
+fieldset[disabled] .wjs-nav .btn-link:focus,
+fieldset[disabled] .wjs-nav .btn-link:hover {
+    color: #ccc
+}
