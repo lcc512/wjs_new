@@ -15,124 +15,221 @@
 </head>
 
 <body>
-<!-- 顶部通栏 -->
-<header class="wjs-topBar hidden-sm hidden-xs">
-	<div class="container">
-		<div class="col-md-2">
-			<a class="wjs-app" href="#">
-				<span class="glyphicon glyphicon-phone"></span>
-				<span>手机微金所</span>
-				<span class="glyphicon glyphicon-menu-down"></span>
-				<img src="images/app-qrcode.jpg">
-			</a>
-		</div>
-		<div class="col-md-5">
-			<span class="glyphicon glyphicon-earphone"></span>
-			<span>客服电话：4006-89-4006 / 010-53563799/（9:00~21:00）</span>
-		</div>
-		<div class="col-md-2">
-			<a href="#">常见问题</a>
-			<a href="#">财富登录</a>
-		</div>
-		<div class="col-md-3">
-			<a class="btn btn-default btn-register" href="#">免费注册</a>
-			<a class="btn btn-link btn-login" href="#">登录</a>
-		</div>
-	</div>
-</header>
-<!-- 导航栏 -->
-<nav class="navbar navbar-default wjs-nav">
-  <div class="container">
-    <!-- 装的商标区域和移动按钮 -->
-    <div class="navbar-header">
-    	<!-- 切换按钮 -->
-    	<!-- data-toggle="collapse" 申明组件 折叠组件  -->
-    	<!-- data-target="选择器" 目标控制元素 -->
-    	<!-- 如果是a元素 可以通过 href 设置 目标元素 -->
-    	<!-- 屏幕阅读器读取状态使用
-    	aria-expanded="false"
-    	role="button" -->
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-      	<!-- 屏幕阅读器读取状态使用
+    <!-- 顶部通栏 -->
+    <header class="wjs-topBar hidden-sm hidden-xs">
+        <div class="container">
+            <div class="col-md-2">
+                <a class="wjs-app" href="#">
+        <span class="glyphicon glyphicon-phone"></span>
+        <span>手机微金所</span>
+        <span class="glyphicon glyphicon-menu-down"></span>
+        <img src="images/app-qrcode.jpg">
+      </a>
+            </div>
+            <div class="col-md-5">
+                <span class="glyphicon glyphicon-earphone"></span>
+                <span>客服电话：4006-89-4006 / 010-53563799/（9:00~21:00）</span>
+            </div>
+            <div class="col-md-2">
+                <a href="#">常见问题</a>
+                <a href="#">财富登录</a>
+            </div>
+            <div class="col-md-3">
+                <a class="btn btn-default btn-register" href="#">免费注册</a>
+                <a class="btn btn-link btn-login" href="#">登录</a>
+            </div>
+        </div>
+    </header>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-default wjs-nav">
+        <div class="container">
+            <!-- 装的商标区域和移动按钮 -->
+            <div class="navbar-header">
+                <!-- 切换按钮 -->
+                <!-- data-toggle="collapse" 申明组件 折叠组件  -->
+                <!-- data-target="选择器" 目标控制元素 -->
+                <!-- 如果是a元素 可以通过 href 设置 目标元素 -->
+                <!-- 屏幕阅读器读取状态使用
+      aria-expanded="false"
+      role="button" -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <!-- 屏幕阅读器读取状态使用
         <span class="sr-only">Toggle navigation</span> -->
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <!-- 商标区域 加图片或文字-->
-      <a class="navbar-brand" href="#"><img src="images/logo1.png"></a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">我要投资</a></li>
-        <li><a href="#">我要借贷</a></li>
-        <li><a href="#">平台介绍</a></li>
-        <li><a href="#">新手专区</a></li>
-        <li><a href="#">最新动态</a></li>
-        <li><a href="#">微平台</a></li>
-      </ul>
-
-      <ul class="nav navbar-nav navbar-right hidden-sm">
-        <li><a href="#">个人中心</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-<!-- 轮播图 -->
-<!-- carousel 这是轮播图模块 -->
-<!-- slide 是否有动画 -->
-<!-- data-ride="carousel" 申明是一个轮播图组件 -->
-<div class="wjs-banner">
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators 指示器 点盒子-->
-  <!-- data-target="#carousel-example-generic" 控制哪个轮播图 -->
-  <!-- data-slide-to="0" 控制轮播图索引为 0 的图片 -->
-  <ol class="carousel-indicators">
-    <!-- js动态添加 -->
-  </ol>
-
-  <!-- Wrapper for slides 图片盒子-->
-  <div class="carousel-inner">
-    <!-- js动态添加 -->
-  </div>
-
-  <!-- Controls 控制-->
-  <!-- data-slide="prev" 具备上一张切换功能 -->
-  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- 商标区域 加图片或文字-->
+                <a class="navbar-brand" href="#"><img src="images/logo1.png"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">我要投资</a></li>
+                    <li><a href="#">我要借贷</a></li>
+                    <li><a href="#">平台介绍</a></li>
+                    <li><a href="#">新手专区</a></li>
+                    <li><a href="#">最新动态</a></li>
+                    <li><a href="#">微平台</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right hidden-sm">
+                    <li><a href="#">个人中心</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- 轮播图 -->
+    <!-- carousel 这是轮播图模块 -->
+    <!-- slide 是否有动画 -->
+    <!-- data-ride="carousel" 申明是一个轮播图组件 -->
+    <div class="wjs-banner">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators 指示器 点盒子-->
+            <!-- data-target="#carousel-example-generic" 控制哪个轮播图 -->
+            <!-- data-slide-to="0" 控制轮播图索引为 0 的图片 -->
+            <ol class="carousel-indicators">
+                <!-- js动态添加 -->
+            </ol>
+            <!-- Wrapper for slides 图片盒子-->
+            <div class="carousel-inner">
+                <!-- js动态添加 -->
+            </div>
+            <!-- Controls 控制-->
+            <!-- data-slide="prev" 具备上一张切换功能 -->
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" ></span>
     
   </a>
-  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right"></span>
     
   </a>
-</div>
-</div>
-<!-- 信息 -->
-<div class="wjs-info"></div>
-<!-- 预约 -->
-<div class="wjs-book"></div>
-<!-- 新闻 -->
-<div class="wjs-news"></div>
-<!-- 合作伙伴 -->
-<div class="wjs-partner"></div>
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </div>
+    </div>
+    <!-- 信息 -->
+    <div class="wjs-info hidden-xs">
+        <div class="container">
+            <div class="col-md-4 col-sm-6">
+                <a href="#" class="media">
+                    <div class="media-left">
+                        <span class="glyphicon glyphicon-usd"></span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">支付交易保障</h4>
+                        <p>银联支付全程保证支付安全</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="#" class="media">
+                    <div class="media-left">
+                        <span class="glyphicon glyphicon-usd"></span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">支付交易保障</h4>
+                        <p>银联支付全程保证支付安全</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="#" class="media">
+                    <div class="media-left">
+                        <span class="glyphicon glyphicon-usd"></span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">支付交易保障</h4>
+                        <p>银联支付全程保证支付安全</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="#" class="media">
+                    <div class="media-left">
+                        <span class="glyphicon glyphicon-usd"></span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">支付交易保障</h4>
+                        <p>银联支付全程保证支付安全</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="#" class="media">
+                    <div class="media-left">
+                        <span class="glyphicon glyphicon-usd"></span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">支付交易保障</h4>
+                        <p>银联支付全程保证支付安全</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="#" class="media">
+                    <div class="media-left">
+                        <span class="glyphicon glyphicon-usd"></span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">支付交易保障</h4>
+                        <p>银联支付全程保证支付安全</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 预约 -->
+    <div class="wjs-book">
+        <div class="container">
+            <div class="pull-left">
+                <span class="glyphicon glyphicon-info-sign"></span> 公告:【微公告】2017年10月31日微金所平台系统升级维护公告 <a href="#" class="wjs-book-link">查看公告</a>
+            </div>
+            <div class="pull-right hidden-xs hidden-sm">
+                <a href="#" class="wjs-book-method"><span class="glyphicon glyphicon-hand-right"></span> 网络借贷暂行办法</a>
+            </div>
+        </div>
+    </div>
+    <!-- 产品区域 -->
+    <div class="wjs-product">
+        <div class="container">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#wjs_product_tab01" data-toggle="tab">特别推荐</a></li>
+                <li><a href="#wjs_product_tab02" data-toggle="tab">微平台</a></li>
+                <li><a href="#wjs_product_tab03" data-toggle="tab">微平台</a></li>
+                <li><a href="#wjs_product_tab04" data-toggle="tab">微平台</a></li>
+                <li><a href="#wjs_product_tab05" data-toggle="tab">微平台</a></li>
+                <li><a href="#wjs_product_tab06" data-toggle="tab">微平台</a></li>
+                <li><a href="#wjs_product_tab07" data-toggle="tab">微平台</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="wjs_product_tab01">1</div>
+                <div class="tab-pane" id="wjs_product_tab02">2</div>
+                <div class="tab-pane" id="wjs_product_tab03">3</div>
+                <div class="tab-pane" id="wjs_product_tab04">4</div>
+                <div class="tab-pane" id="wjs_product_tab05">5.</div>
+                <div class="tab-pane" id="wjs_product_tab06">6</div>
+                <div class="tab-pane" id="wjs_product_tab07">7.</div>
+            </div>
+        </div>
+    </div>
+    <!-- 新闻 -->
+    <div class="wjs-news"></div>
+    <!-- 合作伙伴 -->
+    <div class="wjs-partner"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
