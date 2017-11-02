@@ -68,9 +68,9 @@ a:hover{
 .wjs-nav {
     border: none;
     border-radius: 0;
-    border-bottom: 1px solid #ccc;
+    /*border-bottom: 1px solid #ccc;*/
     background-color: #fff;
-    margin: 0;
+    margin-bottom: : 15px;
 }
 
 .wjs-nav .navbar-brand {
@@ -189,10 +189,15 @@ fieldset[disabled] .wjs-nav .btn-link:hover {
     color: #ccc
 }
 /*轮播图样式*/
-.pc-imageBox{
+.wjs-banner{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.wjs-banner .pc-imageBox{
     display: block;
     width: 100%;
-    height: 350px;
+    height: 410px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
