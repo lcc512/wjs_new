@@ -82,13 +82,20 @@ a:hover {
 
 
 /*导航条*/
-
 .wjs-nav {
     border: none;
     border-radius: 0;
     /*border-bottom: 1px solid #ccc;*/
     background-color: #fff;
     margin-bottom: : 15px;
+    /*affix 相关设置 ，*/
+    /*设置affix后，以前宽度和内容有关，设置affix后，右边有无内容的透明空白，设置width100%解决*/
+    /*z-index 设置最前显示*/
+    /*top0 设置里窗口举例10*/
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .wjs-nav .navbar-brand {
