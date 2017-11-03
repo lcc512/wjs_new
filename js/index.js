@@ -111,6 +111,7 @@ var iscrollOne = function() {
     });
     // 把计算出的宽度设置给父容器
     $tabs.width(width);
+    console.log(width);
 
     new IScroll('.nav-tabs-parent',{
         scrollX: true,

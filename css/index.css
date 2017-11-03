@@ -15,6 +15,7 @@ a:hover {
 }
 
 
+
 /*model css 模块样式*/
 
 .wjs-topBar {
@@ -63,6 +64,7 @@ a:hover {
 }
 
 
+
 /*不用写js代码，设置一个.wjs-app:hover 的css，当hover到 .wjs-app 时， 把img执行某个属性*/
 
 .wjs-app:hover img {
@@ -76,6 +78,7 @@ a:hover {
     border-top: none;
     z-index: 999;
 }
+
 
 
 /*导航条*/
@@ -205,6 +208,7 @@ fieldset[disabled] .wjs-nav .btn-link:hover {
 }
 
 
+
 /*轮播图样式*/
 
 .wjs-banner {
@@ -220,6 +224,7 @@ fieldset[disabled] .wjs-nav .btn-link:hover {
     background-position: center;
     background-size: cover;
 }
+
 
 
 /*信息模块 */
@@ -256,6 +261,7 @@ fieldset[disabled] .wjs-nav .btn-link:hover {
 }
 
 
+
 /*预约区块*/
 
 .wjs-book {
@@ -280,6 +286,7 @@ fieldset[disabled] .wjs-nav .btn-link:hover {
 }
 
 
+
 /*产品区域*/
 
 .wjs-product {
@@ -287,6 +294,7 @@ fieldset[disabled] .wjs-nav .btn-link:hover {
     border-bottom: 1px solid #ccc;
     background-color: #f5f5f5;
 }
+
 
 
 /*重写nav-tabs*/
@@ -382,6 +390,7 @@ fieldset[disabled] .wjs-nav .btn-link:hover {
 }
 
 
+
 /*产品盒子*/
 
 .product-box {
@@ -398,6 +407,7 @@ fieldset[disabled] .wjs-nav .btn-link:hover {
     background-color: #dd3137;
     position: relative;
 }
+
 
 
 /*用伪元素设置内容的方法*/
@@ -424,8 +434,12 @@ fieldset[disabled] .wjs-nav .btn-link:hover {
     position: relative;
     border-left: 1px dashed #ddd;
 }
+
+
+/*做一个块元素，四周圆形边框，设置合适的位移，合适的 内 阴影*/
+
 .product-box .box-right::before,
-.product-box .box-right::after{
+.product-box .box-right::after {
     content: "";
     width: 12px;
     height: 12px;
@@ -433,13 +447,14 @@ fieldset[disabled] .wjs-nav .btn-link:hover {
     left: -6px;
     background-color: #f5f5f5;
     border-radius: 6px;
-
 }
-.product-box .box-right::before{
-    top:-6px;
+
+.product-box .box-right::before {
+    top: -6px;
     box-shadow: inset 0 -3px 3px #d8d8d8;
 }
-.product-box .box-right::after{
+
+.product-box .box-right::after {
     bottom: -6px;
     box-shadow: inset 0 3px 3px #d8d8d8;
 }
@@ -447,6 +462,7 @@ fieldset[disabled] .wjs-nav .btn-link:hover {
 .product-box.active .box-right p {
     color: #fff;
 }
+
 
 
 /*E:first-of-type 通过E找到父元素，然后找到父元素当中的所有E类型的子元素 找到第一个*/
@@ -514,6 +530,188 @@ fieldset[disabled] .wjs-nav .btn-link:hover {
     font-size: 12px;
 }
 
-.product-box .box-left {}
 
-.product-box .box-left {}
+/*新闻模块*/
+
+.wjs-news {
+    padding: 30px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.wjs-news .wjs-news-title {
+    font-size: 24px;
+    line-height: 50px;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    position: relative;
+}
+
+.wjs-news .wjs-news-title::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    bottom: -3px;
+    right: -3px;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+/*以下是新闻模块替换默认的nav-tabs*/
+
+.wjs-news .nav-tabs {
+    border-bottom: 0;
+}
+
+.wjs-news .nav-tabs>li {
+    float: left;
+    margin-bottom: 0;
+}
+
+.wjs-news .nav-tabs>li>a {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    text-align: center;
+
+    background-color: #ccc;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 60px;
+}
+
+
+/*1，页签 在小屏设备 要求固定间距 没有虚线*/
+
+
+/*2，页签 超小屏 要求自适应 没有虚线*/
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .wjs-news .nav-tabs>li>a{
+        margin: 30px 50px;
+    }
+}
+@media (max-width: 768px){
+    .wjs-news .nav-tabs>li{
+        width: 25%;
+    }
+    .wjs-news .nav-tabs>li>a{
+        margin: 30px auto;
+    }
+}
+.wjs-news .nav-tabs>li>a>span {
+    font-size: 30px;
+    line-height: 60px;
+    color: #fff;
+}
+
+.wjs-news .nav-tabs>li>a:hover {
+    border-color: #eee #eee #ddd
+}
+
+.wjs-news .nav-tabs>li.active>a,
+.wjs-news .nav-tabs>li.active>a:focus,
+.wjs-news .nav-tabs>li.active>a:hover {
+    color: #fff;
+    cursor: default;
+    background-color: #dd3137;
+    border: none;
+}
+
+.wjs-news .nav-tabs.nav-justified {
+    width: 100%;
+    border-bottom: 0
+}
+
+.wjs-news .nav-tabs.nav-justified>li {
+    float: none
+}
+
+.wjs-news .nav-tabs.nav-justified>li>a {
+    margin-bottom: 5px;
+    text-align: center
+}
+
+.wjs-news .nav-tabs.nav-justified>.dropdown .dropdown-menu {
+    top: auto;
+    left: auto
+}
+
+@media (min-width:768px) {
+    .wjs-news .nav-tabs.nav-justified>li {
+        display: table-cell;
+        width: 1%
+    }
+    .wjs-news .nav-tabs.nav-justified>li>a {
+        margin-bottom: 0
+    }
+}
+
+.wjs-news .nav-tabs.nav-justified>li>a {
+    margin-right: 0;
+    border-radius: 4px
+}
+
+.wjs-news .nav-tabs.nav-justified>.active>a,
+.wjs-news .nav-tabs.nav-justified>.active>a:focus,
+.wjs-news .nav-tabs.nav-justified>.active>a:hover {
+    border: 1px solid #ddd
+}
+
+@media (min-width:768px) {
+    .wjs-news .nav-tabs.nav-justified>li>a {
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px 4px 0 0
+    }
+    .wjs-news .nav-tabs.nav-justified>.active>a,
+    .wjs-news .nav-tabs.nav-justified>.active>a:focus,
+    .wjs-news .nav-tabs.nav-justified>.active>a:hover {
+        border-bottom-color: #fff
+    }
+}
+
+.wjs-news .nav-tabs li:last-child a {
+    margin-bottom: 0;
+}
+
+.wjs-news .wjs-news-line {
+    height: 100%;
+    width: 1px;
+    border-left: 1px dashed #ccc;
+    position: absolute;
+    left: 45px;
+    top: 0;
+}
+
+.wjs-news-content {
+    list-style: none;
+}
+
+.wjs-news-content li {
+    padding: 15px 0;
+}
+/*合作伙伴模块*/
+.wjs-partner{
+    padding: 30px 0;
+}
+.wjs-partner ul{
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+}
+.wjs-partner ul li{
+    display: inline-block;
+
+}
+.wjs-partner ul li a span{
+    font-size: 50px;
+}
+.wjs-partner ul li a {
+    margin: 0 15px;
+}
+.wjs-partner ul li a:hover{
+    color: #dd3137;
+}
