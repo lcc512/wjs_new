@@ -16,6 +16,8 @@ a:hover {
 
 
 
+
+
 /*model css 模块样式*/
 
 .wjs-topBar {
@@ -65,6 +67,8 @@ a:hover {
 
 
 
+
+
 /*不用写js代码，设置一个.wjs-app:hover 的css，当hover到 .wjs-app 时， 把img执行某个属性*/
 
 .wjs-app:hover img {
@@ -78,6 +82,8 @@ a:hover {
     border-top: none;
     z-index: 999;
 }
+
+
 
 
 
@@ -209,6 +215,8 @@ fieldset[disabled] .wjs-nav .btn-link:hover {
 
 
 
+
+
 /*轮播图样式*/
 
 .wjs-banner {
@@ -227,6 +235,8 @@ fieldset[disabled] .wjs-nav .btn-link:hover {
 
 
 
+
+
 /*信息模块 */
 
 .wjs-info {
@@ -234,14 +244,16 @@ fieldset[disabled] .wjs-nav .btn-link:hover {
     border-bottom: 1px solid #ccc;
 }
 
-.wjs-info>.container{
+.wjs-info>.container {
     /*width: 70%;*/
     /*或者设置一个固定px的宽度，然后下面设置为题查询器，设置在小屏设备下container的宽度*/
     width: 900px;
 }
+
 @media (min-width: 768px) and (max-width: 992px) {
-    .wjs-info>.container, .wjs-book>.container{
-    width: 750px;
+    .wjs-info>.container,
+    .wjs-book>.container {
+        width: 750px;
     }
 }
 
@@ -257,35 +269,48 @@ fieldset[disabled] .wjs-nav .btn-link:hover {
 .wjs-info a span {
     font-size: 38px;
 }
+
+
+
 /*预约区块*/
-.wjs-book{
-    padding:30px 0;
+
+.wjs-book {
+    padding: 30px 0;
     border-bottom: 1px solid #ccc;
 }
-@media (min-width: 992px){
-    .wjs-book>.container{
+
+@media (min-width: 992px) {
+    .wjs-book>.container {
         width: 900px;
     }
 }
 
-.wjs-book .wjs-book-link{
+.wjs-book .wjs-book-link {
     color: #dd3137;
     /*dashed 虚线*/
     border-bottom: 1px dashed #dd3137;
-
 }
-.wjs-book .wjs-book-method:hover{
+
+.wjs-book .wjs-book-method:hover {
     color: #dd3137;
 }
+
+
+
 /*产品区域*/
-.wjs-product{
+
+.wjs-product {
     padding: 30px 0;
     border-bottom: 1px solid #ccc;
     background-color: #f5f5f5;
 }
+
+
+
 /*重写nav-tabs*/
+
 .wjs-product .nav-tabs {
-    border-bottom: 1px solid #ddd
+    border-bottom: 1px solid #ddd;
 }
 
 .wjs-product .nav-tabs>li {
@@ -300,7 +325,6 @@ fieldset[disabled] .wjs-nav .btn-link:hover {
     border: none;
     border-radius: 0;
     margin-right: 0;
-
 }
 
 .wjs-product .nav-tabs>li>a:hover {
@@ -368,4 +392,60 @@ fieldset[disabled] .wjs-nav .btn-link:hover {
     .wjs-product .nav-tabs.nav-justified>.active>a:hover {
         border-bottom-color: #fff
     }
+}
+
+.wjs-product .nav-tabs-parent {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+/*产品盒子*/
+
+.product-box {
+    width: 100%;
+    height: 150px;
+    display: block;
+    background-color: #fff;
+    margin-top: 20px;
+    /*阴影设置方法 水平 垂直 模糊度 颜色*/
+    box-shadow: 3px 3px 5px #d8d8d8;
+}
+
+.product-box.active{
+    background-color: #dd3137;
+}
+
+.product-box .box-left {
+    overflow: hidden;
+}
+
+.product-box .box-right {
+    height: 100%;
+    width: 80px;
+    float: right;
+    text-align: center;
+}
+.product-box.active .box-right p{
+    color: #fff;
+}
+/*E:first-of-type 通过E找到父元素，然后找到父元素当中的所有E类型的子元素 找到第一个*/
+/*E:last-of-type 找到最后一个*/
+/*E:nth-of-type 找到第几个 */
+.product-box.active .box-right p:first-of-type{
+    color: #fff;
+}
+
+.product-box .box-right p:first-of-type {
+    color: #dd3137;
+    margin-top: 25px;
+}
+
+.product-box .box-right p:first-of-type b {
+    font-size: 48px;
+}
+
+.product-box .box-right p:first-of-type sub {
+    bottom: 0;
 }

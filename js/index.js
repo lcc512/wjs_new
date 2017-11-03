@@ -1,6 +1,7 @@
 $(function() {
     // 动态轮播图方法
     banner();
+    iscrollOne();
 });
 
 var banner = function() {
@@ -86,4 +87,34 @@ var banner = function() {
         distanceX = 0;
         isMove = false;
     });
+};
+// 自滑动的插件方法
+var iscrollOne = function() {
+
+    // 1，把所有的页签在一行显示 设置父容器的宽度是所有自容器的宽度之和
+    // 2，满足区域滚动的html结构要求 必须有大容器套着一个小容器
+    // 3，实现滑动功能 使用区域滚动
+
+    // 父容器
+    var $tabs = $('.wjs-product .nav-tabs');
+    // 所有的子容器
+    var $liList = $tabs.find('li');
+    // 计算宽度之和
+    var width = 0;
+    // width 获取的是内容的宽度
+    // innerWidth() 内容和内边距的宽度
+    // outerWidth() 内容和内边距和边框的宽度
+    // outerWidth(true) 内容和内边距和边框和外边距的宽度
+    $.each($liList, function(i, item) {
+        width += $(item).outerWidth(true);
+    });
+    // 把计算出的宽度设置给父容器
+    $tabs.width(width);
+
+    new IScroll('.nav-tabs-parent',{
+        scrollX: true,
+        scrollY: false
+    });
+
+
 };

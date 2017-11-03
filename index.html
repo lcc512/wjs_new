@@ -8,6 +8,8 @@
     <title>微金所仿站</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- iscroll.js 在谷歌浏览器下调试滑动卡顿，下面引入解决方法语句 但是引用后点击失效-->
+    <script>window.PointerEvent = void 0</script>
     <!--[if lt IE 9]>
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -193,18 +195,68 @@
     <div class="wjs-product">
         <div class="container">
             <!-- Nav tabs -->
-            <ul class="nav nav-tabs">
-                <li class="active"><a href="#wjs_product_tab01" data-toggle="tab">特别推荐</a></li>
-                <li><a href="#wjs_product_tab02" data-toggle="tab">微平台</a></li>
-                <li><a href="#wjs_product_tab03" data-toggle="tab">微平台</a></li>
-                <li><a href="#wjs_product_tab04" data-toggle="tab">微平台</a></li>
-                <li><a href="#wjs_product_tab05" data-toggle="tab">微平台</a></li>
-                <li><a href="#wjs_product_tab06" data-toggle="tab">微平台</a></li>
-                <li><a href="#wjs_product_tab07" data-toggle="tab">微平台</a></li>
-            </ul>
+            <div class="nav-tabs-parent">
+              <ul class="nav nav-tabs">
+                  <li class="active"><a href="#wjs_product_tab01" data-toggle="tab">特别推荐</a></li>
+                  <li><a href="#wjs_product_tab02" data-toggle="tab">微平台</a></li>
+                  <li><a href="#wjs_product_tab03" data-toggle="tab">微平台</a></li>
+                  <li><a href="#wjs_product_tab04" data-toggle="tab">微平台</a></li>
+                  <li><a href="#wjs_product_tab05" data-toggle="tab">微平台</a></li>
+                  <li><a href="#wjs_product_tab06" data-toggle="tab">微平台</a></li>
+                  <li><a href="#wjs_product_tab07" data-toggle="tab">微平台</a></li>
+              </ul>
+            </div>
             <!-- Tab panes -->
             <div class="tab-content">
-                <div class="tab-pane active" id="wjs_product_tab01">1</div>
+              <!-- 大中屏3 小2 微1 -->
+                <div class="tab-pane active" id="wjs_product_tab01">
+                  <div class="col-md-4 col-sm-6 col-xs-12">
+                    <a href="#" class="product-box active">
+                      <!-- 浮动的盒子优先显示 -->
+                      <div class="box-right">
+                        <div></div>
+                        <p><b>8</b><sub>%</sub></p>
+                        <p>年利率</p>
+                      </div>
+                      <div class="box-left">
+                        sdfsfksfdjlkfjflkejskjdlfkjdsfls
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-4 col-sm-6 col-xs-12">
+                    <a href="#" class="product-box">
+                      <div class="box-right">
+                        <p><b>8</b><sub>%</sub></p>
+                        <p>年利率</p>
+                      </div>
+                      <div class="box-left">
+                        sdfsfksfdjlkfjflkejskjdlfkjdsfls
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-4 col-sm-6 col-xs-12">
+                    <a href="#" class="product-box">
+                      <div class="box-right">
+                        <p><b>8</b><sub>%</sub></p>
+                        <p>年利率</p>
+                      </div>
+                      <div class="box-left">
+                        sdfsfksfdjlkfjflkejskjdlfkjdsfls
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-4 col-sm-6 col-xs-12">
+                    <a href="#" class="product-box">
+                      <div class="box-right">
+                        <p><b>8</b><sub>%</sub></p>
+                        <p>年利率</p>
+                      </div>
+                      <div class="box-left">
+                        sdfsfksfdjlkfjflkejskjdlfkjdsfls
+                      </div>
+                    </a>
+                  </div>
+                </div>
                 <div class="tab-pane" id="wjs_product_tab02">2</div>
                 <div class="tab-pane" id="wjs_product_tab03">3</div>
                 <div class="tab-pane" id="wjs_product_tab04">4</div>
@@ -232,6 +284,7 @@
     <br>
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/iscroll.js"></script>
     <script src="js/index.js"></script>
 </body>
 
