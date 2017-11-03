@@ -2,6 +2,7 @@ $(function() {
     // 动态轮播图方法
     banner();
     iscrollOne();
+    $('[data-toggle="tooltip"]').tooltip();
 });
 
 var banner = function() {
